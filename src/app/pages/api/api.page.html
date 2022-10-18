@@ -1,0 +1,19 @@
+<ion-content>
+ <h1>api</h1>
+ <h2>Cantidad capitulos: {{cantidad_capitulos}}</h2>
+
+
+ <ion-list *ngFor="let c of capitulos">
+  <ion-item>
+     <ion-label>{{c.name}}</ion-label>
+     <ion-label>{{c.air_data}}</ion-label>
+     <ion-label>{{c.episode}}</ion-label>
+     <ion-button>info capitulo</ion-button>
+
+
+  </ion-item>
+
+
+ </ion-list>
+
+</ion-content>

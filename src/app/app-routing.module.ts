@@ -56,11 +56,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/viajes/viajes.module').then( m => m.ViajesPageModule),
     canActivate: [AuthGuard]
   },
+  
 
   {
     path: '**',
     loadChildren: () => import('./pages/error404/error404.module').then( m => m.Error404PageModule)
   },
+  
+
 
 
 ];

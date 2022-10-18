@@ -25,7 +25,11 @@ const routes: Routes = [
       },      {
         path: 'administrar',
         loadChildren: () => import('../administrar/administrar.module').then( m => m.AdministrarPageModule)
-      }
+      },
+      {
+        path: 'api',
+        loadChildren: () => import('../api/api.module').then( m => m.ApiPageModule)
+      },
     ]
   }
 ];

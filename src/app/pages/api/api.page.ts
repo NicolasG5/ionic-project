@@ -18,7 +18,7 @@ export class ApiPage implements OnInit {
    let datos = this.api.getDatos();
    console.log(datos);
 
-  //para recorrer un observable con
+  //para recorrer un observable con des
    datos.subscribe(
     (data: any) => {
       //console.log(data.info.count)
